@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fastapi-aws-backend"
+version = "0.1.0"
+description = "FastAPI backend for AWS integration"
+authors = ["Your Name <youremail@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.95.0"
+uvicorn = "^0.22.0"
+boto3 = "^1.26.0"
+mangum = "^0.14.0"
+requests = "^2.28.0"  # Added requests for testing
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+black = "^22.10.0"
+isort = "^5.10.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
