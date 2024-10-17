@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ipfs-uploader"
+version = "0.1.0"
+description = ""
+authors = ["Edward Plata <30561775+EdwardPlata@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.2"
+uvicorn = "^0.32.0"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+python-multipart = "^0.0.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
