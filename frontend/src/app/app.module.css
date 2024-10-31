@@ -1,0 +1,256 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh; 
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  overflow: visible;
+}
+
+.topRight {
+  position: absolute;
+  top: -90px;
+  right: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 50px;  
+}
+
+.logo {
+  width: 200px;  
+  height: auto;
+}
+
+.marketplaceHeader {
+  margin-top: 40px;  
+  text-align: center;
+}
+
+.centeredContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;  
+  text-align: center;
+  height: 80%;  
+}
+
+.centeredContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.centeredContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.connectButton, .marketplaceButton {
+  background-color: #111;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.connectButton:hover, .marketplaceButton:hover {
+  background-color: #222;
+}
+
+.marketplaceButton {
+  margin-top: 20px;
+}
+
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #aaa;
+}
+
+.uploadedPreview {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: contain;
+  margin: 20px 0;
+}
+
+.closeButton {
+  background: #f00;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.nftDetailImage {
+  max-width: 100%;
+  max-height: 300px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 0 40px;
+  margin: 20px auto;
+}
+
+.marketCard {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  max-width: 100%;
+}
+
+.marketCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.cardHeader {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.cardHeader h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.cardContent {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #bbb;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.buyButton {
+  background-color: #0071ff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buyButton:hover {
+  background-color: #005bb5;
+}
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  position: relative; 
+}
+
+.searchBar {
+  width: 100%; 
+  padding: 15px;
+  border-radius: 32px;
+  border: 2px solid #fff;
+  background-color: #111;
+  color: #fff;
+}
+
+
+.suggestionsBox {
+  position: absolute;
+  top: 110%;
+  width: 100%;
+  background-color: #222;
+  border: 1px solid #fff;
+  border-radius: 32px;
+  z-index: 10;
+  color: #fff;
+}
+
+.suggestionItem {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover {
+  background-color: #333;
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+  background: #000;  
+  color: #fff;      
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #fff;  
+  width: 400px;      
+  max-width: 100%;
+  position: relative;
+}
+
+.modalTitle {
+  color: #fff;  
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.connectButton:hover {
+  background-color: #333;
+}
